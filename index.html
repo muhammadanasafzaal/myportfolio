@@ -1,621 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio | Muhammad Anas</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="" />
-        <link rel="shortcut icon" href="favico.png">
-        <!--Bootstrap Css-->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- Materialdesign icons Css -->
-        <link rel="stylesheet" href="css/materialdesignicons.min.css">
-        <!-- Mobirise icons Css -->
-        <link rel="stylesheet" href="css/mobiriseicons.css">
-        <!-- Magnific-popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <!-- Animate Css -->
-        <link rel="stylesheet" href="css/animate.min.css">
-        <!-- Owl Slider -->
-        <link rel="stylesheet" href="css/owl.carousel.css" />
-        <link rel="stylesheet" href="css/owl.theme.css" />
-        <link rel="stylesheet" href="css/owl.transitions.css" />
-        <!-- Custom style Css -->
-        <link rel="stylesheet" href="css/style.css">
-        <style>
-            html{
-                scroll-behavior: smooth;
-            }
-                /* width */
-                ::-webkit-scrollbar {
-                  width: 10px;
-              }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio | Muhammad Anas</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="favico.png">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Materialdesign icons Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!-- Mobirise icons Css -->
+    <link rel="stylesheet" href="css/mobiriseicons.css">
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Owl Slider -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+    <!-- Custom style Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        /* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+      }
 
-              /* Track */
-              ::-webkit-scrollbar-track {
-                  background: #fff; 
-              }
+      /* Track */
+      ::-webkit-scrollbar-track {
+          background: #fff; 
+      }
 
-              /* Handle */
-              ::-webkit-scrollbar-thumb {
-                  background: #1f1f1f;
-              }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+          background: #1f1f1f;
+      }
 
-              /* Handle on hover */
-              ::-webkit-scrollbar-thumb:hover {
-                  background:  #000; 
-              }
-            .btn-outline-custom:hover{
-                background-color: #fff !important;
-                border-color: #000 !important;
-                color: #000 !important;
-            }
-            .bg-funfact, .bg-cta {
-                background-attachment: fixed;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- START LOADER -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">Loading...</div>
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          background:  #000; 
+      }
+      .btn-outline-custom:hover{
+        background-color: #fff !important;
+        border-color: #000 !important;
+        color: #000 !important;
+    }
+    .bg-funfact, .bg-cta {
+        background-attachment: fixed;
+    }
+    .cb_edu_exp_detail h6{
+        margin-bottom: 0.3rem;
+    }
+</style>
+</head>
+<body>
+    <!-- START LOADER -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">Loading...</div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo" href="index_html.html">
+                <img src="images/logo.png" alt="" class="img-fluid logo-light"> 
+                <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education & Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link">Recent Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- END LOADER -->
-        <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
-            <div class="container">
-                <!-- LOGO -->
-                <a class="navbar-brand logo" href="index_html.html">
-                        <img src="images/logo.png" alt="" class="img-fluid logo-light"> 
-                        <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark">
-                    </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>                    
-                        <li class="nav-item">
-                            <a href="#education" class="nav-link">Education & Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#work" class="nav-link">Recent Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
+    </nav>
+    <!-- END NAVBAR -->
+    <!--START HOME-->
+    <section class="home-bg section h-100vh" id="home">
+        <div class="bg-overlay"></div>
+        <div class="home-table">
+            <div class="home-table-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="text-white text-center">
+                                <h4>Welcome to My Portfolio</h4>
+                                <h1 class="header_title mb-0 mt-3" style="text-transform: none;">I am <span class="element font-weight-bold" data-elements="Muhammad Anas,a Front-end Developer,a Passionate Learner"></span></h1>
+                                <ul class="social_home list-unstyled text-center pt-4">
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/muhammad-anas-afzaal-704925a1/" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                                </ul>
+                                <div class="header_btn">
+                                    <a href="resume-anas-afzaal-.pdf" class="btn btn-outline-custom btn-rounded mt-4" download>Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll_down">
+            <a href="#about" class="scroll">
+                <i class="mbri-arrow-down text-white"></i>
+            </a>
+        </div>
+    </section>
+    <!--END HOME-->
+    <!-- START ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title">
+                        <h2><span class="font-weight-bold">About </span>Me</h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-12">
+                    <div class="text-center about-detail mx-auto mt-5">
+                        <h3 class="mb-3">Hello! <span class="font-weight-bold text-custom">I am Muhammad Anas.</span></h3>
+                        <ul class="mb-0 list-inline text-center about-work">
+                            <li class="list-inline-item mr-0 text-muted">Front-end Developer</li>
+                            <li class="list-inline-item mr-0 text-muted">Post Graduation Student</li>
+                            <li class="list-inline-item mr-0 text-muted">Technology Enthusiast</li>
+
+                        </ul>
+                        <p class="text-muted mt-3">I am a professional Frontend Developer who understands and manages the user interface according to the users' needs and the best of the experience. I have core expertise in the latest Web technologies and trends such as HTML5, CSS3, JavaScript, jQuery, React JS, Angular, React Native Expo, Bootstrap, Material UI, PHP, WordPress, Shopify, Adobe Photoshop, and Adobe Illustrator to name a few. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="progress-bars skill-custom">
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">HTML5</div>
+                            <div class="text-muted float-right">90%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">CSS3</div>
+                            <div class="text-muted float-right">90%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">JavaScript</div>
+                            <div class="text-muted float-right">80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">jQuery</div>
+                            <div class="text-muted float-right">80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">React JS</div>
+                            <div class="text-muted float-right">75%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">React Native</div>
+                            <div class="text-muted float-right">70%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">Angular</div>
+                            <div class="text-muted float-right">50%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">Shopify</div>
+                            <div class="text-muted float-right">60%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="progress-bars skill-custom">
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">WordPress</div>
+                            <div class="text-muted float-right">80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">HTML To WordPress</div>
+                            <div class="text-muted float-right">80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">PSD to HTML</div>
+                            <div class="text-muted float-right">90%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">PSD to WordPress</div>
+                            <div class="text-muted float-right">80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">Adobe Photoshop</div>
+                            <div class="text-muted float-right">80%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">Adobe Illustrator</div>
+                            <div class="text-muted float-right">70%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="text-dark font-weight-bold float-left">MS Office</div>
+                            <div class="text-muted float-right">90%</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+    <!-- END FUNFACTS -->
+    <section class="section bg-funfact">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row" id="counter">
+                <div class="col-lg-4 offset-md-2">
+                    <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                        <div class="lan_fun_icon mb-3">
+                            <i class="mbri-timer h1"></i>
+                        </div>
+                        <h1 class="lan_fun_value mb-1" data-count="2">2</h1>
+                        <p class="lan_fun_name mb-0">Years of Experience</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
+                        <div class="lan_fun_icon mb-3">
+                            <i class="mbri-gift h1"></i>
+                        </div>
+                        <h1 class="lan_fun_value mb-1" data-count="50">50+</h1>
+                        <p class="lan_fun_name mb-0">Completed Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- START FUNFACTS -->
+    <!-- START EXP. & EDU. -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title">
+                        <h2><span class="font-weight-bold">Education & Experience</span></h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2">My Academic History and Industry Experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 pt-4">
+                <div class="col-lg-5">
+                    <div class="cv_edu_exp mt-3">
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Master In Computer Science (MCS)</h4>
+                                        <h6>University of Karachi, Karachi</h6>
+                                        <small>Feb 2021 - Present</small>
+                                        <p class="cv_desc mb-0 mt-2">Master In Computer Science (MCS) from University of Karachi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Certification in Web App Development</h4>
+                                        <h6>Expertizo University, Karachi</h6>
+                                        <small>Sep 2021 - Dec 2021</small>
+                                        <p class="cv_desc mb-0 mt-2">Certification in React & React Native Application Development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Bachelors in Computer Science (BCS)</h4>
+                                        <h6>University of Karachi, Karachi</h6>
+                                        <small>Feb 2016 - Dec 2018</small>
+                                        <p class="cv_desc mb-0 mt-2">Bachelors In Computer Science (BCS) from University of Karachi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Intermediate (Pre-Engineering)</h4>
+                                        <h6>DJ Science College, Karachi</h6>
+                                        <small>Sep 2012 - Dec 2014</small>
+                                        <p class="cv_desc mb-0 mt-2">Intermediate in Pre-Engineering from DJ Science College.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Matriculation (Comp. Science)</h4>
+                                        <h6>Metropolitan Academy, Karachi</h6>
+                                        <small>Sep 2012 - Dec 2014</small>
+                                        <p class="cv_desc mb-0 mt-2">Matriculation in Computer Science from Metropolitan Academy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2">
+                    <div class="cv_edu_exp mt-3">
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Front-end Developer</h4>
+                                        <h6>Symits Pvt Ltd, Karachi</h6>
+                                        <small>September 2020 - Present</small>
+                                        <p class="cv_desc mb-0 mt-2">Fulfilling my responsibilities with honesty and great pleasure here as a Frontend Website Developer. My JD involves development, optimization, and, maintenance of websites of several scales using latest technologies such as HTML5, CSS3, JavaScript, Bootstrap 4, PHP, jQuery, WordPress, Shopify and, Adobe Photoshop to name a few.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Frontend Developer and Content Creator</h4>
+                                        <h6>Optimal Creations Pvt Ltd, Karachi</h6>
+                                        <small>March 2020 - August 2020</small>
+                                        <p class="cv_desc mb-0 mt-2">Fulfilled my role as a Frontend Website Developer at Optimal Creations, Karachi. My duties included development, optimization, and maintenance of websites of several scales using technologies such as HTML5, CSS3, JavaScript, WordPress, and Shopify to name a few. My J.D also involved writing content for social media and other websites. I also served as the editor for CEO of Optimal Creations, Mr. Sarmad Ali Abbasi's book, 'Unboxing the Phenomenal World of Digital Marketing'. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Teacher (Visiting Faculty)</h4>
+                                        <h6>Govt. National College, Karachi</h6>
+                                        <small>August 2019 - December 2019</small>
+                                        <p class="cv_desc mb-0 mt-2">Served as a part-time teacher here where I have taught three courses namely Operating System, Data Communication and Computer Networks to students of Bachelors of Computer Science(BCS). Although it was my very first experience to teach undergraduate courses, I fulfilled my role with great pleasure and enjoyed sharing my time at Govt. National College.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cv_edu_exp_box mt-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="cv_edu_exp_year font-weight-bold text-custom position-relative"></div>
+                                    <div class="cb_edu_exp_detail">
+                                        <h4>Operations Coordinator and 2D/3D Modeler</h4>
+                                        <h6>Al Sa'ee Pvt Ltd, Karachi</h6>
+                                        <small>June 2014 - Decemer 2015</small>
+                                        <p class="cv_desc mb-0 mt-2">My J.D included coordinating with the engineering team to complete and deliver the projects at the client's site. I also used to make architectural 2D and 3D drawings/models as per the client's requirement using SWEET HOME 3D software.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </section>
+    <!-- END EXP. & EDU. -->
+    <!-- START CTA -->
+    <section class="section bg-cta">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center text-white">
+                        <h1>For Services and More.</h1>
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-outline-custom">Contact Me!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CTA -->
+    <!--START WORK -->   
+    <section class="section text-center" id="work">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="text-center mx-auto section-main-title">
+                        <h2>My <span class="font-weight-bold">Recent Projects</span></h2>
+                        <div class="main-title-border">
+                            <i class="mdi mdi-asterisk"></i>
+                        </div>
+                        <p class="text-muted mx-auto mt-2">A glimpse of my recently finished and ongoing projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <ul class="text-center list-unstyled list-inline mb-0 text-capitlize work_menu" id="menu-filter">
+                        <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".webdesign">Web Design</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".wordpress">WordPress</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".apps">Apps</a></li>
+                        <li class="list-inline-item"><a class="" data-filter=".conversion">Website Conversion</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <!-- END NAVBAR -->
-        <!--START HOME-->
-        <section class="home-bg section h-100vh" id="home">
-            <div class="bg-overlay"></div>
-            <div class="home-table">
-                <div class="home-table-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="text-white text-center">
-                                    <h4>Welcome to My Portfolio</h4>
-                                    <h1 class="header_title mb-0 mt-3" style="text-transform: none;">I am <span class="element font-weight-bold" data-elements="Muhammad Anas.,A Front-end Developer.,A Student"></span></h1>
-                                    <ul class="social_home list-unstyled text-center pt-4">
-                                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/muhammad-anas-afzaal-704925a1/" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
-                                    </ul>
-                                    <div class="header_btn">
-                                        <a href="resume-anas-afzaal-.pdf" class="btn btn-outline-custom btn-rounded mt-4" download>Download CV</a>
-                                    </div>
-                                </div>
+            <div class="row mt-5 work-filter">
+                <div class="col-lg-4 webdesign webdesign">
+                    <div class="work_img_box rounded">
+                        <a class="img-zoom" href="images/works/pro1.jpg"></a>
+                        <div class="work_images">
+                            <img src="images/works/pro1.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <a href="https://happydonut.pk/" target="_blank"><h4 class="mb-0">Happy Donut PK</h4></a>
+                                <h6 class="mb-0">Website Design</h6>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="scroll_down">
-                <a href="#about" class="scroll">
-                    <i class="mbri-arrow-down text-white"></i>
-                </a>
-            </div>
-        </section>
-        <!--END HOME-->
-        <!-- START ABOUT -->
-        <section class="section" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center mx-auto section-main-title">
-                            <h2><span class="font-weight-bold">About </span>Me</h2>
-                            <div class="main-title-border">
-                                <i class="mdi mdi-asterisk"></i>
+                <div class="col-lg-4 seo wordpress">
+                    <div class="work_img_box rounded">
+                        <a class="img-zoom" href="images/works/pro2.jpg"></a>
+                        <div class="work_images">
+                            <img src="images/works/pro2.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <a href="https://www.beachboundsports.com/" target="_blank"><h4>Beach Bound Sports</h4></a>
+                                <h6>Custom WordPress Project</h6>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row pt-4">
-                    <div class="col-lg-12">
-                        <div class="text-center about-detail mx-auto mt-5">
-                            <h3 class="mb-3">Hello! <span class="font-weight-bold text-custom">I am Muhammad Anas.</span></h3>
-                            <ul class="mb-0 list-inline text-center about-work">
-                                <li class="list-inline-item mr-0 text-muted">Front-end Developer</li>
-                                <li class="list-inline-item mr-0 text-muted">Post Graduation Student</li>
-                                <li class="list-inline-item mr-0 text-muted">Technology Enthusiast</li>
-                                
-                            </ul>
-                            <p class="text-muted mt-3">I am a professional Frontend Website Developer who understands and manages the user interface according to the users' needs and the best of the experience. I have core expertise in the latest Web technologies and trends such as HTML5, CSS3, JavaScript, jQuery, React JS, React Native Expo, Bootstrap, Material UI, PHP, WordPress, Shopify, Adobe Photoshop, and Adobe Illustrator to name a few. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <div class="progress-bars skill-custom">
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">HTML5</div>
-                                <div class="text-muted float-right">90%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">CSS3</div>
-                                <div class="text-muted float-right">90%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">JavaScript</div>
-                                <div class="text-muted float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">jQuery</div>
-                                <div class="text-muted float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">React JS</div>
-                                <div class="text-muted float-right">75%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">React Native</div>
-                                <div class="text-muted float-right">70%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Angular</div>
-                                <div class="text-muted float-right">50%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                             <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Shopify</div>
-                                <div class="text-muted float-right">60%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="progress-bars skill-custom">
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">WordPress</div>
-                                <div class="text-muted float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">HTML To WordPress</div>
-                                <div class="text-muted float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">PSD to HTML</div>
-                                <div class="text-muted float-right">90%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">PSD to WordPress</div>
-                                <div class="text-muted float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Adobe Photoshop</div>
-                                <div class="text-muted float-right">80%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:80%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">Adobe Illustrator</div>
-                                <div class="text-muted float-right">70%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="clearfix">
-                                <div class="text-dark font-weight-bold float-left">MS Office</div>
-                                <div class="text-muted float-right">90%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END ABOUT -->
-        <!-- END FUNFACTS -->
-        <section class="section bg-funfact">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row" id="counter">
-                    <div class="col-lg-4 offset-md-2">
-                        <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                            <div class="lan_fun_icon mb-3">
-                                <i class="mbri-timer h1"></i>
-                            </div>
-                            <h1 class="lan_fun_value mb-1" data-count="2">2</h1>
-                            <p class="lan_fun_name mb-0">Years of Experience</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                            <div class="lan_fun_icon mb-3">
-                                <i class="mbri-gift h1"></i>
-                            </div>
-                            <h1 class="lan_fun_value mb-1" data-count="50">50+</h1>
-                            <p class="lan_fun_name mb-0">Completed Projects</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- START FUNFACTS -->
-        <!-- START EXP. & EDU. -->
-        <section class="section" id="education">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center mx-auto section-main-title">
-                            <h2><span class="font-weight-bold">Education & Experience</span></h2>
-                            <div class="main-title-border">
-                                <i class="mdi mdi-asterisk"></i>
-                            </div>
-                            <p class="text-muted mx-auto mt-2">My Academic History and Industry Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4 pt-4">
-                    <div class="col-lg-5">
-                        <div class="cv_edu_exp mt-3">
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Sep 2021 - Dec 2021</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Expertizo University, Karachi</h4>
-                                            <p class="cv_desc mb-0">Certification in React & React Native Application Development.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Feb 2021 - Present</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Master In Computer Science (MCS)</h4>
-                                            <p class="cv_desc mb-0">Master In Computer Science (MCS) from University of Karachi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Feb 2016 - Dec 2018</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Bachelors in Computer Science (BCS)</h4>
-                                            <p class="cv_desc mb-0">Bachelors In Computer Science (BCS) from University of Karachi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Sep 2012 - Dec 2014</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Intermediate (Pre-Engineering)</h4>
-                                            <p class="cv_desc mb-0">Intermediate in Pre-Engineering from DJ Sindh Govt Science College.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Sep 2012 - Dec 2014</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Matriculation (Comp. Science)</h4>
-                                            <p class="cv_desc mb-0">Matriculation in Computer Science from Metropolitan Academy.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-2">
-                        <div class="cv_edu_exp mt-3">
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Sep 2020 - Present</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Front-end Developer</h4>
-                                            <p class="cv_desc mb-0">Fulfilling my responsibilities with honesty and great pleasure here as a Frontend Website Developer. My JD involves development, optimization, and, maintenance of websites of several scales using latest technologies such as HTML5, CSS3, JavaScript, Bootstrap 4, PHP, jQuery, WordPress, Shopify and, Adobe Photoshop to name a few.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Mar 2020 - Aug 2020</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Frontend Developer and Content Creator</h4>
-                                            <p class="cv_desc mb-0">Fulfilled my role as a Frontend Website Developer at Optimal Creations, Karachi. My duties included development, optimization, and maintenance of websites of several scales using technologies such as HTML5, CSS3, JavaScript, WordPress, and Shopify to name a few. My J.D also involved writing content for social media and other websites. I also served as the editor for CEO of Optimal Creations, Mr. Sarmad Ali Abbasi's book, 'Unboxing the Phenomenal World of Digital Marketing'. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Aug 2019 - Dec 2019</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Teacher (Visiting Faculty)</h4>
-                                            <p class="cv_desc mb-0">Served as a part-time teacher here where I have taught three courses namely Operating System, Data Communication and Computer Networks to students of Bachelors of Computer Science(BCS). Although it was my very first experience to teach undergraduate courses, I fulfilled my role with great pleasure and enjoyed sharing my time at Govt. National College.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cv_edu_exp_box mt-4">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="cv_edu_exp_year font-weight-bold text-custom position-relative">Aug 2019 - Dec 2019</div>
-                                        <div class="cb_edu_exp_detail">
-                                            <h4>Operations Coordinator and 2D/3D Modeler</h4>
-                                            <p class="cv_desc mb-0">My J.D included coordinating with the engineering team to complete and deliver the projects at the client's site. I also used to make architectural 2D and 3D drawings/models as per the client's requirement using SWEET HOME 3D software.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </section>
-        <!-- END EXP. & EDU. -->
-        <!-- START CTA -->
-        <section class="section bg-cta">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center text-white">
-                            <h1>For Services and More.</h1>
-                            <div class="mt-4">
-                                <a href="#contact" class="btn btn-outline-custom">Contact Me!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END CTA -->
-        <!--START WORK -->   
-        <section class="section text-center" id="work">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center mx-auto section-main-title">
-                            <h2>My <span class="font-weight-bold">Recent Projects</span></h2>
-                            <div class="main-title-border">
-                                <i class="mdi mdi-asterisk"></i>
-                            </div>
-                            <p class="text-muted mx-auto mt-2">A glimpse of my recently finished and ongoing projects.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col-lg-12">
-                        <ul class="text-center list-unstyled list-inline mb-0 text-capitlize work_menu" id="menu-filter">
-                            <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".webdesign">Web Design</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".wordpress">WordPress</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".apps">Apps</a></li>
-                            <li class="list-inline-item"><a class="" data-filter=".conversion">Website Conversion</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row mt-5 work-filter">
-                    <div class="col-lg-4 webdesign webdesign">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="images/works/pro1.jpg"></a>
-                            <div class="work_images">
-                                <img src="images/works/pro1.jpg" alt="image" class="img-fluid mx-auto d-block">
-                                <div class="work_overlay">
-                                    <a href="https://happydonut.pk/" target="_blank"><h4 class="mb-0">Happy Donut PK</h4></a>
-                                    <h6 class="mb-0">Website Design</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 seo wordpress">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="images/works/pro2.jpg"></a>
-                            <div class="work_images">
-                                <img src="images/works/pro2.jpg" alt="image" class="img-fluid mx-auto d-block">
-                                <div class="work_overlay">
-                                    <a href="https://www.beachboundsports.com/" target="_blank"><h4>Beach Bound Sports</h4></a>
-                                    <h6>Custom WordPress Project</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 apps">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="images/works/pro3.jpg"></a>
-                            <div class="work_images">
-                                <img src="images/works/pro3.jpg" alt="image" class="img-fluid mx-auto d-block">
-                                <div class="work_overlay">
-                                    <a href="https://codesandbox.io/s/brave-glade-rc5q2?file=/src/App.js" target="_blank"><h4>Dashboard Application</h4></a>
-                                    <h6>React JS App</h6>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 seo wordpress conversion">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="images/works/pro4.jpg"></a>
-                            <div class="work_images">
-                                <img src="images/works/pro4.jpg" alt="image" class="img-fluid mx-auto d-block">
-                                <div class="work_overlay">
-                                   <a href="https://www.martinissandiego.com/" target="_blank"><h4>Martini Sandiego.com </h4></a>
-                                    <h6>HTML To PSD Conversion</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 apps">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="images/works/pro6.jpg"></a>
-                            <div class="work_images">
-                                <img src="images/works/pro6.jpg" alt="image" class="img-fluid mx-auto d-block">
-                                <div class="work_overlay">
-                                    <a href="https://github.com/muhammadanasafzaal/Simple-Chat-App-using-React-Native-Expo-Firebase-v9" target="_blank"><h4>Chat Application </h4></a>
-                                    <h6>React Native Mobile App</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 apps">
-                        <div class="work_img_box rounded">
-                            <a class="img-zoom" href="images/works/pro5.jpg"></a>
-                            <div class="work_images">
-                                <img src="images/works/pro5.jpg" alt="image" class="img-fluid mx-auto d-block">
-                                <div class="work_overlay">
-                                     <a href="https://codesandbox.io/s/quiz-app-forked-x9dt9" target="_blank"><h4>Questionnaire Application </h4></a>
-                                    <h6>React JS App</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <a href="resume-anas-afzaal-.pdf" class="btn btn-outline-custom" style="background-color: black;" download>View More</a>
-                </div>
-            </div>
-        </section>
-        <!--END WORK -->
+                <div class="col-lg-4 apps">
+                    <div class="work_img_box rounded">
+                        <a class="img-zoom" href="images/works/pro3.jpg"></a>
+                        <div class="work_images">
+                            <img src="images/works/pro3.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <a href="https://codesandbox.io/s/brave-glade-rc5q2?file=/src/App.js" target="_blank"><h4>Dashboard Application</h4></a>
+                                <h6>React JS App</h6>
 
-        <!-- CONTACT FORM START-->
-        <section class="section " id="contact" style="background-color: #f9f9f9;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="text-center mx-auto section-main-title">
-                            <h2>Get In <span class="font-weight-bold">Touch</span></h2>
-                            <div class="main-title-border">
-                                <i class="mdi mdi-asterisk"></i>
-                            </div>
-                            <p class="text-muted mx-auto mt-2">For Queries, Suggestions and more.</p>
-                        </div>
-                    </div>
-                </div>  
-                <div class="row mt-4 pt-4">
-                    <div class="col-lg-4">
-                        <div class="text-center mt-4">
-                            <div>
-                                <i class="mbri-mobile2 text-custom h2"></i>
-                            </div>
-                            <div class="mt-2">
-                                <p class="mb-0 font-weight-bold">For Contact</p>
-                                <p class="text-muted">+92 312 3616359</p>
-                            </div>
-                        </div>
-                       
-                        
-                    </div>
-                    <div class="col-lg-4">
-                         <div class="text-center mt-4">
-                            <div>
-                                <i class="mbri-letter text-custom h2"></i>
-                            </div>
-                            <div class="mt-2">
-                                <p class="mb-0 font-weight-bold">For Queries</p>
-                                <p class="text-muted">anaskhan.all95@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="text-center mt-4">
-                            <div>
-                                <i class="mbri-pin text-custom h2"></i>
-                            </div>
-                            <div class="mt-2">
-                                <p class="mb-0 font-weight-bold">Based In</p>
-                                <p class="text-muted">Karachi, Pakistan</p>
-                            </div>
+                </div>
+                <div class="col-lg-4 seo wordpress conversion">
+                    <div class="work_img_box rounded">
+                        <a class="img-zoom" href="images/works/pro4.jpg"></a>
+                        <div class="work_images">
+                            <img src="images/works/pro4.jpg" alt="image" class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                             <a href="https://www.martinissandiego.com/" target="_blank"><h4>Martini Sandiego.com </h4></a>
+                             <h6>PSD To WordPress Conversion</h6>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4 apps">
+                <div class="work_img_box rounded">
+                    <a class="img-zoom" href="images/works/pro6.jpg"></a>
+                    <div class="work_images">
+                        <img src="images/works/pro6.jpg" alt="image" class="img-fluid mx-auto d-block">
+                        <div class="work_overlay">
+                            <a href="https://github.com/muhammadanasafzaal/Simple-Chat-App-using-React-Native-Expo-Firebase-v9" target="_blank"><h4>Chat Application </h4></a>
+                            <h6>React Native Mobile App</h6>
                         </div>
-                    </div>  
-                </div>                          
+                    </div>
+                </div>
             </div>
-        </section> 
-        <!-- CONTACT FORM END-->
-        <!-- START FOOTER -->
-        <section class="bg-light">
-            <div class="container">
-                <div class="row pt-4 pb-4">
-                    <div class="col-lg-12">
+            <div class="col-lg-4 apps">
+                <div class="work_img_box rounded">
+                    <a class="img-zoom" href="images/works/pro5.jpg"></a>
+                    <div class="work_images">
+                        <img src="images/works/pro5.jpg" alt="image" class="img-fluid mx-auto d-block">
+                        <div class="work_overlay">
+                           <a href="https://codesandbox.io/s/quiz-app-forked-x9dt9" target="_blank"><h4>Questionnaire Application </h4></a>
+                           <h6>React JS App</h6>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="mt-4">
+        <a href="resume-anas-afzaal-.pdf" class="btn btn-outline-custom" style="background-color: black;" download>View More</a>
+    </div>
+</div>
+</section>
+<!--END WORK -->
+
+<!-- CONTACT FORM START-->
+<section class="section " id="contact" style="background-color: #f9f9f9;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="text-center mx-auto section-main-title">
+                    <h2>Get In <span class="font-weight-bold">Touch</span></h2>
+                    <div class="main-title-border">
+                        <i class="mdi mdi-asterisk"></i>
+                    </div>
+                    <p class="text-muted mx-auto mt-2">For Queries, Suggestions and more.</p>
+                </div>
+            </div>
+        </div>  
+        <div class="row mt-4 pt-4">
+            <div class="col-lg-4">
+                <div class="text-center mt-4">
+                    <div>
+                        <i class="mbri-mobile2 text-custom h2"></i>
+                    </div>
+                    <div class="mt-2">
+                        <p class="mb-0 font-weight-bold">Via Phone</p>
+                        <a href="tel:+923123616359"><p class="text-muted">+92 312 3616359</p></a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4">
+               <div class="text-center mt-4">
+                <div>
+                    <i class="mbri-letter text-custom h2"></i>
+                </div>
+                <div class="mt-2">
+                    <p class="mb-0 font-weight-bold">Via Mail</p>
+                    <a href="mailto:anaskhan.all95@gmail.com"><p class="text-muted">anaskhan.all95@gmail.com</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center mt-4">
+                <div>
+                    <i class="mbri-pin text-custom h2"></i>
+                </div>
+                <div class="mt-2">
+                    <p class="mb-0 font-weight-bold">Based In</p>
+                    <p class="text-muted">Karachi, Pakistan</p>
+                </div>
+            </div>
+        </div>  
+    </div>                          
+</div>
+</section> 
+<!-- CONTACT FORM END-->
+<!-- START FOOTER -->
+<section class="bg-light">
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-lg-12">
                        <!--  <div class="float-left float_none mt-2 mb-2">
                             <p class="copy-rights text-muted mb-0">2018 &copy; Elvish. Designed by ThemesBoss.</p>
                         </div> -->
                         <div class="float-right float_none mt-2 mb-2">
                             <ul class="list-inline fot_social mb-0">
                                 <!-- <li class="list-inline-item"><a href="" class="social-icon text-muted"><i class="mdi mdi-facebook"></i></a></li> -->
-                               <!--  <li class="list-inline-item"><a href="" class="social-icon text-muted"><i class="mdi mdi-twitter"></i></a></li> -->
+                                <!--  <li class="list-inline-item"><a href="" class="social-icon text-muted"><i class="mdi mdi-twitter"></i></a></li> -->
                                 <li class="list-inline-item"><a href="https://www.linkedin.com/in/muhammad-anas-afzaal-704925a1/" target="_blank" class="social-icon text-muted"><i class="mdi mdi-linkedin"></i></a></li>
                                 <!-- <li class="list-inline-item"><a href="" class="social-icon text-muted"><i class="mdi mdi-google-plus"></i></a></li> -->
                             </ul>
@@ -655,4 +676,4 @@
             });
         </script>
     </body>
-</html>
+    </html>
