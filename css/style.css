@@ -841,8 +841,10 @@ button:focus {
     z-index: 2;
     color: transparent;
     transition: color 150ms ease-in-out 200ms;
-    right: 25px;
+    /* right: 25px; */
+    left:0;
     padding: 0 10px;
+    padding-left: 20px;
 }
 
 .work_img_box .work_images .work_overlay h6 {
@@ -850,12 +852,14 @@ button:focus {
     overflow: hidden;
     position: absolute;
     top: 30px;
-    right: 25px;
+    /* right: 25px; */
+    left:0;
     z-index: 2;
     font-size: 18px;
     transition: color 150ms ease-in-out 200ms;
     text-align: center;
     padding: 0 10px;
+    padding-left: 20px;
 }
 
 .work_img_box .work_images .work_overlay h4:before {
