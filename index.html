@@ -1335,42 +1335,19 @@
             });
         });
 
+        let data = { name: "barium"};
 
-        // User's name
-        const userName = "John Doe"; // You can replace this with any name you want to send
+        fetch("https://imdigitalsolutions.com/user_count.php", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify(data)
+        }).then(res => {
+        console.log("Request complete! response:", res);
+        })        
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
 
-        // Data to be sent to the server
-        const postData = {
-            name: userName
-        };
-
-        // Options for the fetch request
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(postData)
-        };
-
-        // URL of the server route
-        const url = 'https://imdigitalsolutions.com/user_count.php'; // Replace 'https://abc.com/test' with your actual server URL
-
-        // Send the POST request
-        fetch(url, options)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Response from server:', data);
-                // Handle the response from the server here
-            })
-            .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-            });
 
     </script>
 </body>
