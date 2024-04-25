@@ -1390,12 +1390,11 @@
 
         // Define the data to be sent in the POST request
         const postData = {
-            ip_address: ip,
-            city
+            ip_address: ip
         };
 
         let valid = true
-        for (const key in postData) if (!postData[key]) valid = false
+        if(!postData.ip_address) valid=false
 
         if (valid) {
             // Define the headers for the preflight request
