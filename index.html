@@ -1335,18 +1335,49 @@
             });
         });
 
-        let data = { name: "barium"};
+        // Define the data to be sent in the POST request
+        const postData = {
+            name: 'test'
+        };
 
-        fetch("https://imdigitalsolutions.com/user_count.php", {
-        method: "POST",
-        headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify(data)
-        }).then(res => {
-        console.log("Request complete! response:", res);
-        })        
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
+        // Define the headers for the preflight request
+        const headers = new Headers();
+        headers.append('Origin', 'https://muhammadanasafzaal.github.io');
+        headers.append('Access-Control-Request-Method', 'POST');
+        headers.append('Access-Control-Request-Headers', 'Content-Type');
+
+        // Define the options for the preflight request
+        const requestOptions = {
+            method: 'OPTIONS',
+            headers: headers,
+        };
+
+        // Send the preflight request
+        fetch('https://imdigitalsolutions.com/user_count.php', requestOptions)
+            .then(response => {
+                // If preflight request is successful, make the actual POST request
+                if (response.ok) {
+                    // Define headers for the POST request
+                    const postHeaders = new Headers();
+                    postHeaders.append('Content-Type', 'application/json');
+
+                    // Define options for the POST request
+                    const postOptions = {
+                        method: 'POST',
+                        headers: postHeaders,
+                        body: JSON.stringify(postData)
+                    };
+
+                    // Send the POST request
+                    fetch('https://imdigitalsolutions.com/user_count.php', postOptions)
+                        .then(response => response.json())
+                        .then(data => console.log('POST response:', data))
+                        .catch(error => console.error('Error:', error));
+                } else {
+                    console.error('Preflight request failed:', response.statusText);
+                }
+            })
+            .catch(error => console.error('Error:', error));
 
 
     </script>
