@@ -1335,25 +1335,25 @@
             });
         });
 
-       // Make a request to ipapi.co to get IP geolocation information
+        // Make a request to ipapi.co to get IP geolocation information
         fetch('https://ipapi.co/json/')
-        .then(response => response.json())
-        .then(data => {
-            // Extract relevant information
-            const ipAddress = data.ip;
-            const country = data.country_name;
-            const region = data.region;
-            const city = data.city;
+            .then(response => response.json())
+            .then(data => {
+                // Extract relevant information
+                const ipAddress = data.ip;
+                const country = data.country_name;
+                const region = data.region;
+                const city = data.city;
 
-            // Display the information
-            console.log('IP Address:', ipAddress);
-            console.log('Country:', country);
-            console.log('Region:', region);
-            console.log('City:', city);
-        })
-        .catch(error => {
-            console.error('Error fetching IP geolocation:', error);
-        });
+                // Display the information
+                console.log('IP Address:', ipAddress);
+                console.log('Country:', country);
+                console.log('Region:', region);
+                console.log('City:', city);
+            })
+            .catch(error => {
+                console.error('Error fetching IP geolocation:', error);
+            });
 
         // Define the data to be sent in the POST request
         const postData = {
@@ -1363,47 +1363,50 @@
             country
         };
 
-        for(const key in postData) if(!postData[key]) return
+        let valid = true
+        for (const key in postData) if (!postData[key]) valid = false
 
-        // Define the headers for the preflight request
-        const headers = new Headers();
-        headers.append('Origin', 'https://muhammadanasafzaal.github.io');
-        headers.append('Access-Control-Request-Method', 'POST');
-        headers.append('Access-Control-Request-Headers', 'Content-Type');
-        headers.append("Content-Type", "application/json")
+        if (valid) {
+            // Define the headers for the preflight request
+            const headers = new Headers();
+            headers.append('Origin', 'https://muhammadanasafzaal.github.io');
+            headers.append('Access-Control-Request-Method', 'POST');
+            headers.append('Access-Control-Request-Headers', 'Content-Type');
+            headers.append("Content-Type", "application/json")
 
-        // Define the options for the preflight request
-        const requestOptions = {
-            method: 'OPTIONS',
-            headers: headers,
-        };
+            // Define the options for the preflight request
+            const requestOptions = {
+                method: 'OPTIONS',
+                headers: headers,
+            };
 
-        // Send the preflight request
-        fetch('https://imdigitalsolutions.com/user_count.php', requestOptions)
-            .then(response => {
-                // If preflight request is successful, make the actual POST request
-                if (response.ok) {
-                    // Define headers for the POST request
-                    const postHeaders = new Headers();
-                    postHeaders.append('Content-Type', 'application/json');
+            // Send the preflight request
+            fetch('https://imdigitalsolutions.com/user_count.php', requestOptions)
+                .then(response => {
+                    // If preflight request is successful, make the actual POST request
+                    if (response.ok) {
+                        // Define headers for the POST request
+                        const postHeaders = new Headers();
+                        postHeaders.append('Content-Type', 'application/json');
 
-                    // Define options for the POST request
-                    const postOptions = {
-                        method: 'POST',
-                        headers: postHeaders,
-                        body: JSON.stringify(postData)
-                    };
+                        // Define options for the POST request
+                        const postOptions = {
+                            method: 'POST',
+                            headers: postHeaders,
+                            body: JSON.stringify(postData)
+                        };
 
-                    // Send the POST request
-                    fetch('https://imdigitalsolutions.com/user_count.php', postOptions)
-                        .then(response => response.json())
-                        .then(data => console.log('POST response:', data))
-                        .catch(error => console.error('Error:', error));
-                } else {
-                    console.error('Preflight request failed:', response.statusText);
-                }
-            })
-            .catch(error => console.error('Error:', error));
+                        // Send the POST request
+                        fetch('https://imdigitalsolutions.com/user_count.php', postOptions)
+                            .then(response => response.json())
+                            .then(data => console.log('POST response:', data))
+                            .catch(error => console.error('Error:', error));
+                    } else {
+                        console.error('Preflight request failed:', response.statusText);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
 
 
     </script>
