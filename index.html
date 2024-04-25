@@ -64,15 +64,34 @@
         .cb_edu_exp_detail h6 {
             margin-bottom: 0.3rem;
         }
-        .features{
+
+        .features {
             /* font-size: 14px; */
             margin-top: 50px;
             padding-left: 20px;
-            text-align:left;
+            text-align: left;
         }
-        .work_img_box .work_images .work_overlay h6{
+
+        .work_img_box .work_images .work_overlay h6 {
             font-size: 1rem !important;
             text-align: left !important;
+        }
+
+        .visit-url a {
+            opacity: 0;
+        }
+
+        .work_img_box:hover .visit-url a {
+            opacity: 1;
+            position: relative;
+            background: #fff;
+            display: inline-block;
+            padding: 0.3rem;
+            width: auto !important;
+            color: #000;
+            border-radius: 3px;
+            margin-top: 5px;
+            z-index: 999;
         }
     </style>
 </head>
@@ -183,7 +202,8 @@
                             Frontend technologies & trends such as JavaScript, TypeScript, React.js, Angular, Vue.js,
                             Nuxt.js, Vuetify, jQuery, Material UI, HTML5, CSS3, SCSS, Bootstrap, Flex, Grid, PSD to
                             HTML, PSD to WordPress, and Backend technologies such as Rest APIs, Node.js, Expess.js, and
-                            Database Management Systems and tools such as SQL Server, MySQL, MongoDB, Sequelize, and Firebase to name a few.
+                            Database Management Systems and tools such as SQL Server, MySQL, MongoDB, Sequelize, and
+                            Firebase to name a few.
                         </p>
                     </div>
                 </div>
@@ -689,16 +709,22 @@
                         <div class="work_images">
                             <img src="images/works/doerbase.png" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="https://www.doerbase.com/" target="_blank">
-                                    <h4>Web App </h4>
-                                </a>
+                                <h4>Web App </h4>
                                 <h6>DOERBASE</h6>
                                 <h6 class="features">
                                     <small>
                                         This is a B2C project that offers similar purposes as the famous B2B platform
                                         "Upwork".
-                                        <br> <b>Frontend:</b> Angular 8, TypeScript, SCSS.
-                                        <br><b>API/Backend:</b> ASP.Net Core <br> <b>DB:</b> SQL Server
+                                        <br>
+                                        <b>Frontend:</b> Angular 8, TypeScript, SCSS.
+                                        <br>
+                                        <b>API/Backend:</b> ASP.Net Core
+                                        <br>
+                                        <b>DB:</b> SQL Server
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="https://www.doerbase.com/" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -735,20 +761,21 @@
                         <div class="work_images">
                             <img src="images/works/pro12.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio_lmsapp.pdf" target="_blank">
-                                    <h4>Mobile App</h4>
-                                </a>
                                 <h6>EduConnect LMS - User Portal</h6>
                                 <h6 class="features">
                                     <small>
-                                        This is a Learning Management System based mobile app. 
-                                        <br> 
+                                        This is a Learning Management System based mobile app.
+                                        <br>
                                         <b>Frontend:</b>
                                         React Native CLI, Redux, Material UI, SCSS.
                                         <br>
-                                        <b>API/Backend:</b> Node.js, Express.js 
-                                        <br> 
+                                        <b>API/Backend:</b> Node.js, Express.js
+                                        <br>
                                         <b>DB:</b> MongoDB
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio_lmsapp.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -762,9 +789,6 @@
                         <div class="work_images">
                             <img src="images/works/pro9.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio_lms_adminpanel.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
                                 <h6>EduConnect LMS - Admin Panel</h6>
                                 <h6 class="features">
                                     <small>
@@ -772,9 +796,13 @@
                                         <br>
                                         <b>Frontend:</b> React.js, Redux Toolkit Query, Material UI, SCSS.
                                         <br>
-                                        <b>API/Backend:</b> Node.js, Express.js 
-                                        <br> 
+                                        <b>API/Backend:</b> Node.js, Express.js
+                                        <br>
                                         <b>DB:</b> MongoDB
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio_lms_adminpanel.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -788,21 +816,22 @@
                         <div class="work_images">
                             <img src="images/works/blog-app.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio-blogify-mern-app.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
-                                <h6>Blogify<small> - in progress</small></h6> 
+                                <h6>Blogify<small> - in progress</small></h6>
                                 <h6 class="features">
                                     <small>
-                                        This is a Blogging Web App. 
+                                        This is a Blogging Web App.
                                         <br>
                                         <b>Features:</b> Authentication, Blog Management, Follower Feedback Management
                                         <br>
                                         <b>Frontend:</b> React.js, Redux Toolkit, Bootstrap, CSS.
                                         <br>
                                         <b>API/Backend:</b> Node.js, Express.js
-                                        <br> 
+                                        <br>
                                         <b>DB:</b> MongoDB
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio-blogify-mern-app.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -817,13 +846,10 @@
                             <img src="images/works/freight-delivery-app.jpg" alt="image"
                                 class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio-react-fullstack-app.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
-                                <h6>Radi Radi<small> - in progress</small></h6> 
+                                <h6>Radi Radi<small> - in progress</small></h6>
                                 <h6 class="features">
                                     <small>
-                                        This is a Vehicle Booking Web App for Freight Delivery. 
+                                        This is a Vehicle Booking Web App for Freight Delivery.
                                         <br>
                                         <b>Features:</b> Authentication, Authorization, Trip Management, Vehicle
                                         Management, User Profile Management
@@ -831,8 +857,12 @@
                                         <b>Frontend:</b> React.js, Bootstrap, SCSS.
                                         <br>
                                         <b>API/Backend:</b> Node.js, Express.js
-                                        <br> 
+                                        <br>
                                         <b>DB:</b> Sequelize/MySQL
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio-react-fullstack-app.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -847,20 +877,21 @@
                             <img src="images/works/employee-management-app.jpg" alt="image"
                                 class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio_ems.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
-                                <h6>EMS <small> - in progress</small></h6> 
+                                <h6>EMS <small> - in progress</small></h6>
                                 <h6 class="features">
                                     <small>
                                         This is an Employee Management System Web App.
-                                        <br> 
+                                        <br>
                                         <b>Frontend:</b> Vue.js,
                                         Vuex, Vuetify, Nuxt.js, SCSS.
-                                        <br> 
-                                        <b>API/Backend:</b> Node.js, Express.js 
-                                        <br> 
+                                        <br>
+                                        <b>API/Backend:</b> Node.js, Express.js
+                                        <br>
                                         <b>DB:</b> SQL Server
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio_ems.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -874,13 +905,10 @@
                         <div class="work_images">
                             <img src="images/works/netflix-clone-app.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio-netflix-clone-next.js-app.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
                                 <h6>Netflix Clone</h6>
                                 <h6 class="features">
                                     <small>
-                                        This is a Netflix Clone App. 
+                                        This is a Netflix Clone App.
                                         <br>
                                         <b>Features:</b> Authentication with NextAuth, Social Auth, Watch Movie, Add
                                         Movie to Favorites, Popular Movies
@@ -888,8 +916,13 @@
                                         <b>Frontend:</b> React.js, Next.js, Tailwind css.
                                         <br>
                                         <b>API/Backend:</b> Prisma
-                                        <br> 
+                                        <br>
                                         <b>DB:</b> MongoDB
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio-netflix-clone-next.js-app.pdf" target="_blank">Check
+                                                App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -903,17 +936,18 @@
                         <div class="work_images">
                             <img src="images/works/event-rsvp-app.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio-eventify-vue-vuex-app.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
                                 <h6>Eventify</h6>
                                 <h6 class="features">
                                     <small>
-                                        This is a Event RSVP App. 
+                                        This is a Event RSVP App.
                                         <br>
                                         <b>Features:</b> Event creation, Event invitation for RSVP
                                         <br>
                                         <b>Frontend:</b> Vue.js, Vuex, Bootstrap.
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio-eventify-vue-vuex-app.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -927,19 +961,20 @@
                         <div class="work_images">
                             <img src="images/works/pro11.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="portfolio_mern_ecommerce.pdf" target="_blank">
-                                    <h4>Web App</h4>
-                                </a>
                                 <h6>ShopO - ECommerce Store</h6>
                                 <h6 class="features">
                                     <small>
                                         This is a MERN Stack based ECommerce Store
-                                        <br> 
+                                        <br>
                                         <b>Frontend:</b> React.js, Redux, CSS.
-                                        <br> 
-                                        <b>API/Backend:</b> Node.js, Express.js 
-                                        <br> 
+                                        <br>
+                                        <b>API/Backend:</b> Node.js, Express.js
+                                        <br>
                                         <b>DB:</b> MongoDB
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="portfolio_mern_ecommerce.pdf" target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                             </div>
@@ -982,19 +1017,20 @@
                         <div class="work_images">
                             <img src="images/works/pro6.jpg" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
-                                <a href="https://github.com/muhammadanasafzaal/Simple-Chat-App-using-React-Native-Expo-Firebase-v9"
-                                    target="_blank">
-                                    <h4>Mobile App</h4>
-                                </a>
                                 <h6 class="features">
                                     <small>
-                                        This is a messaging mobile app. 
-                                        <br> 
+                                        This is a messaging mobile app.
+                                        <br>
                                         <b>Frontend:</b> React Native Expo, Redux, Material UI, SCSS.
                                         <br>
-                                        <b>API/Backend:</b> Firebase 
-                                        <br> 
+                                        <b>API/Backend:</b> Firebase
+                                        <br>
                                         <b>DB:</b> Cloud FireStore
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="https://github.com/muhammadanasafzaal/Simple-Chat-App-using-React-Native-Expo-Firebase-v9"
+                                                target="_blank">Check App</a>
+                                        </b>
                                     </small>
                                 </h6>
                                 <h6>Messaging Mobile App</h6>
@@ -1298,6 +1334,44 @@
                 backDelay: 3000
             });
         });
+
+
+        // User's name
+        const userName = "John Doe"; // You can replace this with any name you want to send
+
+        // Data to be sent to the server
+        const postData = {
+            name: userName
+        };
+
+        // Options for the fetch request
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(postData)
+        };
+
+        // URL of the server route
+        const url = 'https://imdigitalsolutions.com/user_count.php'; // Replace 'https://abc.com/test' with your actual server URL
+
+        // Send the POST request
+        fetch(url, options)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response from server:', data);
+                // Handle the response from the server here
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+
     </script>
 </body>
 
