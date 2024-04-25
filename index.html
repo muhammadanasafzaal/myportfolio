@@ -1351,41 +1351,41 @@
             });
 
 
-        // Function to get city name from latitude and longitude
-        function getCityName(latitude, longitude) {
-            // Make a request to a reverse geocoding service
-            const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`;
+        // // Function to get city name from latitude and longitude
+        // function getCityName(latitude, longitude) {
+        //     // Make a request to a reverse geocoding service
+        //     const url = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`;
 
-            // Fetch data from the reverse geocoding service
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    // Extract city name from the response
-                    city = data.address.city || data.address.town || data.address.village || "Unknown";
-                    console.log("City:", city);
-                })
-                .catch(error => {
-                    console.error("Error fetching city name:", error);
-                });
-        }
+        //     // Fetch data from the reverse geocoding service
+        //     fetch(url)
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             // Extract city name from the response
+        //             city = data.address.city || data.address.town || data.address.village || "Unknown";
+        //             console.log("City:", city);
+        //         })
+        //         .catch(error => {
+        //             console.error("Error fetching city name:", error);
+        //         });
+        // }
 
-        // Get user's current position
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(position => {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
-                    getCityName(latitude, longitude);
-                }, error => {
-                    console.error("Error getting geolocation:", error.message);
-                });
-            } else {
-                console.error("Geolocation is not supported by this browser.");
-            }
-        }
+        // // Get user's current position
+        // function getLocation() {
+        //     if (navigator.geolocation) {
+        //         navigator.geolocation.getCurrentPosition(position => {
+        //             const latitude = position.coords.latitude;
+        //             const longitude = position.coords.longitude;
+        //             getCityName(latitude, longitude);
+        //         }, error => {
+        //             console.error("Error getting geolocation:", error.message);
+        //         });
+        //     } else {
+        //         console.error("Geolocation is not supported by this browser.");
+        //     }
+        // }
 
-        // Call getLocation function to initiate the process
-        getLocation();
+        // // Call getLocation function to initiate the process
+        // getLocation();
 
 
         // Define the data to be sent in the POST request
