@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Muhammad Anas</title>
+    <title>Portfolio | Muhammad Anas Afzaal</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -545,13 +545,16 @@
                                         <small>July 2024 - Present</small>
                                         <p class="cv_desc mb-0 mt-2">
                                             <b>Responsibilities:</b>
-                                            Development, optimization, and, maintenance of Web Applications and mentoring junior
-developers. Also collaboration with backend engineers, UI/UX designers, and product stakeholders to
-deliver seamless and responsive user interfaces
+                                            Development, optimization, and, maintenance of Web Applications and
+                                            mentoring junior
+                                            developers. Also collaboration with backend engineers, UI/UX designers, and
+                                            product stakeholders to
+                                            deliver seamless and responsive user interfaces
                                         </p>
                                         <p class="cv_desc mb-0 mt-2"><b>Technologies & Skills: </b>
-                                            React.js, Next.js, JavaScript, TypeScript, Node.js, Express.js, MySQL, Sequelize MongoDB, HTML,
-CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
+                                            React.js, Next.js, JavaScript, TypeScript, Node.js, Express.js, MySQL,
+                                            Sequelize MongoDB, HTML,
+                                            CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                                         </p>
                                     </div>
                                 </div>
@@ -733,6 +736,35 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                     <div class="work_img_box rounded">
                         <!-- <a class="img-zoom" href="images/works/doerbase.png"></a> -->
                         <div class="work_images">
+                            <img src="images/works/krypto-blockchain-app.png" alt="image"
+                                class="img-fluid mx-auto d-block">
+                            <div class="work_overlay">
+                                <!-- <h4>Web App </h4> -->
+                                <h6>Krypto - Ethereum Wallet dApp</h6>
+                                <h6 class="features">
+                                    <small>
+                                        Krypto Blockchain App is a sleek and modern decentralized web application (dApp)
+                                        that allows users to send Ethereum.
+                                        <br>
+                                        <b>Frontend:</b> Vite + React.js, Ethers.js
+                                        <br>
+                                        <b>API/Backend:</b> Hardhat, Solidity
+                                        <br>
+                                        <b class="visit-url">
+                                            <a href="https://krypto-blockchain-frontend.vercel.app/"
+                                                target="_blank">Check App</a>
+                                        </b>
+                                    </small>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 apps">
+                    <div class="work_img_box rounded">
+                        <!-- <a class="img-zoom" href="images/works/doerbase.png"></a> -->
+                        <div class="work_images">
                             <img src="images/works/doerbase.png" alt="image" class="img-fluid mx-auto d-block">
                             <div class="work_overlay">
                                 <!-- <h4>Web App </h4> -->
@@ -896,9 +928,8 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                     </div>
                 </div>
 
-                <div class="col-lg-4 apps">
+                <!-- <div class="col-lg-4 apps">
                     <div class="work_img_box rounded">
-                        <!-- <a class="img-zoom" href="images/works/employee-management-app.jpg"></a> -->
                         <div class="work_images">
                             <img src="images/works/employee-management-app.jpg" alt="image"
                                 class="img-fluid mx-auto d-block">
@@ -923,7 +954,7 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-lg-4 apps">
                     <div class="work_img_box rounded">
@@ -966,7 +997,8 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                                     <small>
                                         This is a Chat Messenger Web App.
                                         <br>
-                                        <b>Features:</b> User Authentication, Chat Room creation, Chat History, Chat Searching,
+                                        <b>Features:</b> User Authentication, Chat Room creation, Chat History, Chat
+                                        Searching,
                                         Responsiveness UI
                                         <br>
                                         <b>Frontend:</b> React.js, Tailwind CSS.
@@ -1297,7 +1329,7 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                 </div>
             </div>
             <div class="row mt-4 pt-4">
-                <!-- <div class="col-lg-4">
+                <div class="col-lg-4">
                     <div class="text-center mt-4">
                         <div>
                             <i class="mbri-mobile2 text-custom h2"></i>
@@ -1322,7 +1354,7 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
                             </a>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="col-lg-4 offset-md-4">
                     <div class="text-center mt-4">
                         <div>
@@ -1390,21 +1422,21 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
             });
         });
 
-        let ip, city;
-        // Make a request to ipapi.co to get IP geolocation information
-        async function getIPAddress() {
-            const url = 'https://api.ipify.org/?format=json'
-            const response = await fetch(url);
+        // let ip, city;
+        // // Make a request to ipapi.co to get IP geolocation information
+        // async function getIPAddress() {
+        //     const url = 'https://api.ipify.org/?format=json'
+        //     const response = await fetch(url);
 
-            // Check if the request was successful
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
+        //     // Check if the request was successful
+        //     if (!response.ok) {
+        //         throw new Error('Network response was not ok');
+        //     }
 
-            // Parse the response as JSON
-            const data = await response.json();
-            return data
-        }
+        //     // Parse the response as JSON
+        //     const data = await response.json();
+        //     return data
+        // }
 
         // // Function to get city name from latitude and longitude
         // function getCityName(latitude, longitude) {
@@ -1444,55 +1476,55 @@ CSS, SCSS, Tailwind CSS, Ant Design, Reactstrap, Material UI.
 
 
         // Define the data to be sent in the POST request
-        ip = await getIPAddress()
-        const postData = {
-            ip_address: ip.ip
-        };
+        // ip = await getIPAddress()
+        // const postData = {
+        //     ip_address: ip.ip
+        // };
 
-        let valid = true
-        if (!postData.ip_address) valid = false
+        // let valid = true
+        // if (!postData.ip_address) valid = false
 
-        if (valid) {
-            // Define the headers for the preflight request
-            const headers = new Headers();
-            headers.append('Origin', 'https://muhammadanasafzaal.github.io');
-            headers.append('Access-Control-Request-Method', 'POST');
-            headers.append('Access-Control-Request-Headers', 'Content-Type');
-            headers.append("Content-Type", "application/json")
+        // if (valid) {
+        //     // Define the headers for the preflight request
+        //     const headers = new Headers();
+        //     headers.append('Origin', 'https://muhammadanasafzaal.github.io');
+        //     headers.append('Access-Control-Request-Method', 'POST');
+        //     headers.append('Access-Control-Request-Headers', 'Content-Type');
+        //     headers.append("Content-Type", "application/json")
 
-            // Define the options for the preflight request
-            const requestOptions = {
-                method: 'OPTIONS',
-                headers: headers,
-            };
+        //     // Define the options for the preflight request
+        //     const requestOptions = {
+        //         method: 'OPTIONS',
+        //         headers: headers,
+        //     };
 
-            // Send the preflight request
-            fetch('https://imdigitalsolutions.com/user_count.php', requestOptions)
-                .then(response => {
-                    // If preflight request is successful, make the actual POST request
-                    if (response.ok) {
-                        // Define headers for the POST request
-                        const postHeaders = new Headers();
-                        postHeaders.append('Content-Type', 'application/json');
+        //     // Send the preflight request
+        //     fetch('https://imdigitalsolutions.com/user_count.php', requestOptions)
+        //         .then(response => {
+        //             // If preflight request is successful, make the actual POST request
+        //             if (response.ok) {
+        //                 // Define headers for the POST request
+        //                 const postHeaders = new Headers();
+        //                 postHeaders.append('Content-Type', 'application/json');
 
-                        // Define options for the POST request
-                        const postOptions = {
-                            method: 'POST',
-                            headers: postHeaders,
-                            body: JSON.stringify(postData)
-                        };
+        //                 // Define options for the POST request
+        //                 const postOptions = {
+        //                     method: 'POST',
+        //                     headers: postHeaders,
+        //                     body: JSON.stringify(postData)
+        //                 };
 
-                        // Send the POST request
-                        fetch('https://imdigitalsolutions.com/user_count.php', postOptions)
-                            .then(response => response.json())
-                            .then(data => console.log('POST response:', data))
-                            .catch(error => console.error('Error:', error));
-                    } else {
-                        console.error('Preflight request failed:', response.statusText);
-                    }
-                })
-                .catch(error => console.error('Error:', error));
-        }
+        //                 // Send the POST request
+        //                 fetch('https://imdigitalsolutions.com/user_count.php', postOptions)
+        //                     .then(response => response.json())
+        //                     .then(data => console.log('POST response:', data))
+        //                     .catch(error => console.error('Error:', error));
+        //             } else {
+        //                 console.error('Preflight request failed:', response.statusText);
+        //             }
+        //         })
+        //         .catch(error => console.error('Error:', error));
+        // }
 
 
     </script>
